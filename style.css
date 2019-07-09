@@ -1,0 +1,217 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway', san-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+
+@media (min-width:60rem) {
+.title{
+  font-size: 3.5rem;
+}
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9 em;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.0rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+.button-small{
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #00ff6c;
+  border-color: #00ff6c;
+}
+
+
+.button-accent:hover,
+.button-accent:focus {
+background: #00ff6c;
+color: #232323;
+}
+
+
+
+/* header */
+
+header {
+  position: absolute;
+  margin-top: 1em;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin: 1em
+}
+
+nav a{
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .5em;
+  color: black;
+}
+
+nav a:hover,
+nav a:focus{
+  color:rgba(41, 38, 38, 0.6);
+}
+
+
+
+/*Home*/
+
+.home-page{
+  background-image: url(/portfolio-images/computer.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color:#00ff6c;
+}
+
+@media (min-width: 60rem) {
+  .home-page {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+}
+
+.home-about-textbox {
+background-color: #232323;
+padding: 3em;
+width: 100vw;
+margin-left: -2.5%;
+outline: 2px solid #00ff6c;
+outline-offset: -2.5em;
+color: #FFF;
+position: relative;
+}
+
+.home-about-textbox h1{
+  color: #00ff6c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .75em;
+  background: #232323;
+  padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+  h1{
+    font-size: 2rem;
+  }
+
+.home-about-textbox h1{
+  top: .6em;
+  padding: 0 .325em;
+ }
+}
+
+@media (min-width: 60em) {
+  h1{
+    font-size: 2.5rem;
+  }
+  
+  .logo{
+    background-image: url(/portfolio-images/diamond.jpg);
+    float: right;
+  }
+
+
+  .home-about-textbox {
+    width: 100vw;
+    margin-left: -2.5%;
+  }
+
+.home-about-textbox h1{
+  top: .3em;
+  padding: 0 .6em;
+ }
+}
+
+
+.portfolio{
+  margin: 3em 0;
+}
+
+.port-item {
+  margin: 0;
+  position: relaitive;
+}
+
+.port-item img{
+  display: block;
+}
+
+.port-descrip {
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0,0,0,.6);
+  padding-bottom: 2em;
+}
+
+.port-descrip p{
+margin: 1em;
+}
