@@ -192,14 +192,17 @@ position: relative;
 .port-item {
   margin: 0 auto;
   position: relative;
+  float: left;
+  width: 33.33%;
+  display:block;
 }
 
 .port-item img{
 position: relative;
-width:  300px;
+width:  400px;
 height: 300px;
-background-position: 50% 50%;
 background-repeat:   no-repeat;
+display:block;
 }
 
 .port-descrip {
@@ -208,11 +211,9 @@ background-repeat:   no-repeat;
   right: 1em;
   color: white;
   background: rgba(0,0,0,.6);
-  background-position: 50% 50%;
   padding-bottom: 2em;
   position: absolute;
-}
-
-.port-descrip p{
-margin: 1em;
+  width: 200px;
+  margin: auto;
+  display: block;
 }
